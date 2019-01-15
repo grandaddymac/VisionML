@@ -60,16 +60,19 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3aw-gu-HvP" customClass="RoundedShadowButton" customModule="VisionML" customModuleProvider="target">
-                                <rect key="frame" x="31" y="724" width="85" height="36"/>
+                                <rect key="frame" x="31" y="724" width="100" height="36"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="0rS-uf-FWJ"/>
-                                    <constraint firstAttribute="width" constant="85" id="2j7-Mo-iJa"/>
+                                    <constraint firstAttribute="width" constant="100" id="2j7-Mo-iJa"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
                                 <state key="normal" title="Flash Off">
                                     <color key="titleColor" red="0.84705882352941175" green="0.27843137254901962" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="flashButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q32-t5-6ea"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
