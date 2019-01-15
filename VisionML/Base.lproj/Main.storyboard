@@ -67,13 +67,16 @@
                                     <constraint firstAttribute="width" constant="100" id="2j7-Mo-iJa"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
-                                <state key="normal" title="Flash Off">
+                                <state key="normal" title="FLASH OFF">
                                     <color key="titleColor" red="0.84705882352941175" green="0.27843137254901962" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="flashButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q32-t5-6ea"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="gS1-WR-SSL">
+                                <rect key="frame" x="297.66666666666669" y="682.66666666666663" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -86,7 +89,9 @@
                             <constraint firstItem="3aw-gu-HvP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="31" id="dib-uT-sCf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Diz-hP-uA7" secondAttribute="trailing" constant="24" id="doP-Me-wnF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Diz-hP-uA7" secondAttribute="bottom" constant="11" id="dva-jp-vVw"/>
+                            <constraint firstItem="gS1-WR-SSL" firstAttribute="centerX" secondItem="Diz-hP-uA7" secondAttribute="centerX" id="fcE-eB-r4c"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3aw-gu-HvP" secondAttribute="bottom" constant="18" id="j3c-Mu-LyZ"/>
+                            <constraint firstItem="gS1-WR-SSL" firstAttribute="centerY" secondItem="Diz-hP-uA7" secondAttribute="centerY" id="luO-KQ-Fra"/>
                             <constraint firstItem="EkY-Ja-mSB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="odV-f4-Lji"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -98,6 +103,7 @@
                         <outlet property="flashButton" destination="3aw-gu-HvP" id="FnT-OM-mpz"/>
                         <outlet property="identificationLabel" destination="cXj-4h-bX5" id="jHF-6L-q3S"/>
                         <outlet property="roundedLabelView" destination="EkY-Ja-mSB" id="PhE-S5-hOq"/>
+                        <outlet property="spinner" destination="gS1-WR-SSL" id="o4n-f5-yEH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
